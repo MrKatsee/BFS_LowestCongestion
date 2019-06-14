@@ -21,6 +21,7 @@ public class Vertex : MonoBehaviour
         {
             Vector3 vec = a.transform.position - transform.position;
             distance.Add(a, (int)vec.magnitude);
+            Debug.Log(gameObject.name + " " + a.name + " " + distance[a]);
         }
     }
 
